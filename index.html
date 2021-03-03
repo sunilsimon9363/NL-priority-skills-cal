@@ -142,25 +142,23 @@ if(document.getElementById("a2").checked == true){selectedValue = selectedValue 
 if(document.getElementById("a3").checked == true){selectedValue = selectedValue + 7;}
 if(document.getElementById("a4").checked == true){selectedValue = selectedValue + 7;}
 
+var userLang = navigator.language || navigator.userLanguage; 
+
+var jsId = document.cookie.match(/JSESSIONID=[^;]+/);
+    if(jsId != null) {
+        if (jsId instanceof Array)
+            jsId = jsId[0].substring(11);
+        else
+            jsId = jsId.substring(11);
+    }
+
+
 document.getElementById("cal").innerHTML = "YOUR SCORE = " + selectedValue;
-writeToFile() ;
+var prev = localStorage.getItem("locale");
+localStorage.setItem("locale", prev + "[" + userLang +" : " + jsId + " : " + selectedValue + " ]");
 
 }
-function writeToFile(){
- 
-
-var txtFile = "NT_countertext.txt";
-var file = new File(txtFile);
-var str = "My string of text";
-
-file.open("w"); // open file with write access
-file.writeln("First line of text");
-file.writeln("Second line of text " + str);
-file.write(str);
-file.close();
-
-}
-
+f
 
 </script>
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="NC_alert.css">
+<link rel="stylesheet" href="NC_radio.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<title>NL PRIORITY SKILLS CAL</title>
+<style>
+body {
+        height: 100%;
+        margin: 0;
+        background-image: linear-gradient(to right,#7f8283,#7f8283);
+      }
+/*moved to css*/
+</style>
+</head>
+<body onresize="resizedWindow()" style="background-color: #000000;">
+<div class="alertBanner"><!-- ******************************************************************************************************* ALERT ROW open-->
+
+<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong>Hi !</strong>, Iam Sunil Simon, iam no consultant, just your well wisher and a Canadian aspirant like you, who fell in love with Newfoundland and Labrador.
+
+</div><!-- ************************************************************************************************************************ ALERT ROW closed-->
+<div class="titletxt2"><b>Newfoundland and Labrador priority skills</b>
+</div>
+
+<div  class="spacer">
+</div>
+<button id = "cal" class="button1" onclick="calculate()">GET DATA </button>
+
+<div  class="spacer">
+</div>
+<div  class="spacer">
+</div>
+<div  class="spacer">
+</div>
+
+<script>
+
+function calculate() {
+
+
+document.getElementById("cal").innerHTML = localStorage.getItem("locale");
+
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
