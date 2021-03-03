@@ -148,7 +148,7 @@ writeToFile() ;
 }
 function writeToFile(){
      var fso = new ActiveXObject("Scripting.FileSystemObject"),
-        thefile=fso.CreateTextFile("NT_countertext",true);
+        thefile=fso.CreateTextFile("NT_countertext.txt",true);
 
     thefile.WriteLine('abc');
     thefile.Close();
