@@ -1,0 +1,90 @@
+
+.radiobtn {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  float : left;
+  Width : 5%;
+  text-align:center;
+}
+.radiotxt {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  float : left;
+  Width : 95%;
+  font-size: 20px;
+}
+.titletxt {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  float : left;
+  Width : 100%;
+  Margin-left:3%;
+}
+.titletxt2 {
+  display: inline-block;
+  background-color: #000000;
+  border: none;
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+  float : left;
+  Width : 100%;
+  text-align:center;
+}
+ .blockset {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  float : right;
+  Width : 95%;
+}
+.blocksetsub {
+  background-image: linear-gradient(to right,#13160f 20%,#7f8283);
+  Padding-top : 10px;
+  Padding-left : 10px;
+}
+.blocksetsub2 {
+  background-image: linear-gradient(to right,#13160f 20%,#7f8283);
+  border-style: solid;
+Padding-top : 10px;
+Padding-left : 10px;
+}
+
+.button1 {
+  background-color: #000000;
+  color: red;
+  font-size: 30px;
+  border-style: solid;
+Padding-top : 10px;
+Padding-left : 10px;
+Width : 100%;
+}
+.button1:hover {
+  background-color: #cdcdcd;
+}
+.spacer {
+ display: inline-block;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  float : right;
+  Width : 100%;
+  Height : 20px;
+Padding-top : 10px;
+Padding-left : 10px;
+}

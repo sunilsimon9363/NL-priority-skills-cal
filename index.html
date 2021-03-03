@@ -2,44 +2,152 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="NC_alert.css">
+<link rel="stylesheet" href="NC_radio.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <title>NL PRIORITY SKILLS CAL</title>
 <style>
 body {
         height: 100%;
         margin: 0;
-        background-image: linear-gradient(to right,#1f1c18,#000000);
+        background-image: linear-gradient(to right,#7f8283,#7f8283);
       }
 /*moved to css*/
 </style>
 </head>
 <body onresize="resizedWindow()" style="background-color: #000000;">
+<div class="alertBanner"><!-- ******************************************************************************************************* ALERT ROW open-->
 
-<form action="/action_page.php">
-  <p>Please select your gender:</p>
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Male</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Other</label>
+<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong>Hi !</strong>, Iam Sunil Simon, iam no consultant, just your well wisher and a Canadian aspirant like you, who fell in love with Newfoundland and Labrador.
 
-  <br>  
+</div><!-- ************************************************************************************************************************ ALERT ROW closed-->
+<div class="titletxt2"><b>Newfoundland and Labrador priority skills</b>
+</div>
+<div class="titletxt">- English test CLB level :
+</div>
+<div  class="blockset blocksetsub">
+  <input class="radiobtn" type="radio" id="e7" name="English" value="clb7">
+  <label class="radiotxt" for="clb7">CLB 7+</label><br>
+  <input class="radiobtn" type="radio" id="e6" name="English" value="clb6">
+  <label class="radiotxt" for="clb6">CLB 6+</label><br>
+  <input class="radiobtn" type="radio" id="e5" name="English" value="clb5">
+  <label class="radiotxt" for="clb5">CLB 5+</label>
+  <input class="radiobtn" type="radio" id="e0" name="English" value="ena">
+  <label class="radiotxt" for="ena">NOT APPLICABLE</English>
+</div>
+<div class="titletxt">- French test CLB level :
+</div>
+<div  class="blockset blocksetsub">
+  <input class="radiobtn" type="radio" id="f5" name="French" value="clb5">
+  <label class="radiotxt" for="clb5">CLB 5+</label>
+  <input class="radiobtn" type="radio" id="f0" name="French" value="fna">
+  <label class="radiotxt" for="fna">NOT APPLICABLE</label>
+</div>
+<div class="titletxt">- Your Age :
+</div>
+<div  class="blockset blocksetsub">
+  <input class="radiobtn" type="radio" id="age2" name="age" value="age2">
+  <label class="radiotxt" for="age2">31 - 40</label><br>  
+ <input class="radiobtn" type="radio" id="age1" name="age" value="age1">
+  <label class="radiotxt" for="age1">21 - 30</label><br>
+  <input class="radiobtn" type="radio" id="age3" name="age" value="age3">
+  <label class="radiotxt" for="age3">41 - 50</label><br>
+  <input class="radiobtn" type="radio" id="age4" name="age" value="age4">
+  <label class="radiotxt" for="age4">51 - 59</label><br>  
+  <input class="radiobtn" type="radio" id="age5" name="age" value="age5">
+  <label class="radiotxt" for="age5">60+</label><br>  
+</div>
+<div class="titletxt">- Your Education :
+</div>
+<div  class="blockset blocksetsub">
+  <input class="radiobtn" type="radio" id="edu1" name="edu" value="e1">
+  <label class="radiotxt" for="e1">Phd/Doctrate</label><br>
+  <input class="radiobtn" type="radio" id="edu2" name="edu" value="e2">
+  <label class="radiotxt" for="e2">Masters</label><br>  
+  <input class="radiobtn" type="radio" id="edu3" name="edu" value="e3">
+  <label class="radiotxt" for="e3">Canadian post secondary degree/diploma</label><br>
+  <input class="radiobtn" type="radio" id="edu4" name="edu" value="e4">
+  <label class="radiotxt" for="e4">Outland post secondary degree/diploma</label><br>  
+  <input class="radiobtn" type="radio" id="edu5" name="edu" value="e5">
+  <label class="radiotxt" for="e5">High school diploma</label><br>  
+</div>
+<div class="titletxt">- Your Experience :
+</div>
+<div  class="blockset blocksetsub">
+  <input class="radiobtn" type="radio" id="exp1" name="exp" value="ex1">
+  <label class="radiotxt" for="e1">5+ years</label><br>
+  <input class="radiobtn" type="radio" id="exp2" name="exp" value="ex2">
+  <label class="radiotxt" for="e2">3-5  years</label><br>  
+  <input class="radiobtn" type="radio" id="exp3" name="exp" value="ex3">
+  <label class="radiotxt" for="e3">1-3  years</label><br>
+  <input class="radiobtn" type="radio" id="exp4" name="exp" value="ex4">
+  <label class="radiotxt" for="e4">less than a year</label><br>  
+</div>
+</div>
+<div class="titletxt">- Adaptabilty :
+</div>
+<div  class="blockset blocksetsub2">
+<input class="radiobtn" type="checkbox" id="a1" name="a1" value="ex1">
+  <label class="radiotxt" for="e1">Relative in Newfoundland and Labrador</label><br>
+</div>
+<div  class="blockset blocksetsub2">
+<input class="radiobtn" type="checkbox" id="a2" name="a2" value="ex1">
+  <label class="radiotxt" for="e1">In demand work occurred in Canada</label><br>
+</div>
+<div  class="blockset blocksetsub2">
+<input class="radiobtn" type="checkbox" id="a3" name="a3" value="ex1">
+  <label class="radiotxt" for="e1">In demand work occurred in NL</label><br>
+</div>
+<div  class="blockset blocksetsub2">
+<input class="radiobtn" type="checkbox" id="a4" name="a4" value="ex1">
+  <label class="radiotxt" for="e1">In demand work occurred in NL, Outside St'Jhons</label><br>
+</div>
+<div  class="spacer">
+</div>
+<button id = "cal" class="button1" onclick="calculate()">CALCULATE </button>
 
-  <p>Please select your age:</p>
-  <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">0 - 30</label><br>
-  <input type="radio" id="age2" name="age" value="60">
-  <label for="age2">31 - 60</label><br>  
-  <input type="radio" id="age3" name="age" value="100">
-  <label for="age3">61 - 100</label><br><br>
-  <input type="submit" value="Submit">
-</form>
+<div  class="spacer">
+</div>
+<div  class="spacer">
+</div>
+<div  class="spacer">
+</div>
 
+<script>
 
-<!-- ***************************************** -->
-<script src="SJ_ScriptMain.js">
+function calculate() {
+    var selectedValue = 0;
+    if(document.getElementById("e7").checked == true){selectedValue = selectedValue + 24;}
+if(document.getElementById("e6").checked == true){selectedValue = selectedValue + 22;}
+if(document.getElementById("e5").checked == true){selectedValue = selectedValue + 20;}
+if(document.getElementById("e0").checked == true){selectedValue = selectedValue + 0;}
+if(document.getElementById("f5").checked == true){selectedValue = selectedValue + 20;}
+if(document.getElementById("f0").checked == true){selectedValue = selectedValue + 0;}
+if(document.getElementById("age1").checked == true){selectedValue = selectedValue + 12;}
+if(document.getElementById("age2").checked == true){selectedValue = selectedValue + 16;}
+if(document.getElementById("age3").checked == true){selectedValue = selectedValue + 8;}
+if(document.getElementById("age4").checked == true){selectedValue = selectedValue + 4;}
+if(document.getElementById("age5").checked == true){selectedValue = selectedValue + 0;}
+if(document.getElementById("edu1").checked == true){selectedValue = selectedValue + 24;}
+if(document.getElementById("edu2").checked == true){selectedValue = selectedValue + 20;}
+if(document.getElementById("edu3").checked == true){selectedValue = selectedValue + 15;}
+if(document.getElementById("edu4").checked == true){selectedValue = selectedValue + 12;}
+if(document.getElementById("edu5").checked == true){selectedValue = selectedValue + 6;}
+if(document.getElementById("exp1").checked == true){selectedValue = selectedValue + 40;}
+if(document.getElementById("exp2").checked == true){selectedValue = selectedValue + 30;}
+if(document.getElementById("exp3").checked == true){selectedValue = selectedValue + 20;}
+if(document.getElementById("exp4").checked == true){selectedValue = selectedValue + 10;}
+if(document.getElementById("a1").checked == true){selectedValue = selectedValue + 10;}
+if(document.getElementById("a2").checked == true){selectedValue = selectedValue + 5;}
+if(document.getElementById("a3").checked == true){selectedValue = selectedValue + 7;}
+if(document.getElementById("a4").checked == true){selectedValue = selectedValue + 7;}
+
+document.getElementById("cal").innerHTML = "YOUR SCORE = " + selectedValue;
+}
+
 </script>
+
+
 
 </body>
 </html>
