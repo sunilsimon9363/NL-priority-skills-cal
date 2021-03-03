@@ -143,7 +143,17 @@ if(document.getElementById("a3").checked == true){selectedValue = selectedValue 
 if(document.getElementById("a4").checked == true){selectedValue = selectedValue + 7;}
 
 document.getElementById("cal").innerHTML = "YOUR SCORE = " + selectedValue;
+writeToFile() ;
+
 }
+function writeToFile(){
+     var fso = new ActiveXObject("Scripting.FileSystemObject"),
+        thefile=fso.CreateTextFile("NT_countertext",true);
+
+    thefile.WriteLine('abc');
+    thefile.Close();
+}
+
 
 </script>
 
