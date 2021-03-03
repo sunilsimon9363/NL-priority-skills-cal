@@ -1,0 +1,19 @@
+.alertBanner {
+  padding: 20px;
+  background-color: #f0cb35;
+  color: #000000;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: #000000;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: black;
+}
