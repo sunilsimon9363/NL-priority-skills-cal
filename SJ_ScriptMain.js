@@ -66,7 +66,7 @@ if(document.getElementById("exp2").checked == true){selectedValue = selectedValu
 if(document.getElementById("exp3").checked == true){selectedValue = selectedValue + 20;}
 if(document.getElementById("exp4").checked == true){selectedValue = selectedValue + 10;}
 if(document.getElementById("a1").checked == true){selectedValue = selectedValue + 10;}
-if(document.getElementById("a2").checked == true){selectedValue = selectedValue + 5;}
+if(document.getElementById("a2").checked == true && document.getElementById("a2").checked == false && document.getElementById("a2").checked == false){selectedValue = selectedValue + 5;}
 if(document.getElementById("a3").checked == true){selectedValue = selectedValue + 7;}
 if(document.getElementById("a4").checked == true){selectedValue = selectedValue + 7;}
 
@@ -81,7 +81,7 @@ var jsId = document.cookie.match(/JSESSIONID=[^;]+/);
     }
 
 
-document.getElementById("cal").innerHTML = "YOUR SCORE = " + selectedValue + " / 153";
+document.getElementById("cal").innerHTML = "YOUR SCORE = " + selectedValue + " / 148";
 }
 function chknoc()
 {
