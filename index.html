@@ -1,9 +1,12 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="NC_topTab.css">
 <link rel="stylesheet" href="NC_alert.css">
 <link rel="stylesheet" href="NC_radio.css">
+<link rel="stylesheet" href="NC_pageVerticalSpliter.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <title>NL PRIORITY SKILLS CAL</title>
 <style>
@@ -21,8 +24,18 @@ body {
 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong>Hi !</strong>, Iam Sunil Simon, iam no consultant, just your well wisher and a Canadian aspirant like you, who fell in love with Newfoundland and Labrador.
 
 </div><!-- ************************************************************************************************************************ ALERT ROW closed-->
+
 <div class="titletxt2"><b>Newfoundland and Labrador priority skills</b>
 </div>
+  <div class="tab">
+   <button style="float: right" class="tab button" onclick="openTab1(event)" id="noc"><b>Check NOC</b></button>
+<button style="float: right" class="tab button" onclick="openTab2(event)" id="score"><b>Check Score</b></button>
+  </div>
+
+<!-- ************************************************************************ content1 open-->
+<div id = "content1" class="content1 content1sub" style="width:100%;">
+
+
 <div class="titletxt">- English test CLB level :
 </div>
 <div  class="blockset blocksetsub">
@@ -84,21 +97,21 @@ body {
   <label class="radiotxt" for="e4">less than a year</label><br>  
 </div>
 </div>
-<div class="titletxt">- Adaptabilty :
+<div id = "content2" class="titletxt">- Adaptabilty :
 </div>
-<div  class="blockset blocksetsub2">
+<div  id = "content2a" class="blockset blocksetsub2">
 <input class="radiobtn" type="checkbox" id="a1" name="a1" value="ex1">
   <label class="radiotxt" for="e1">Relative in Newfoundland and Labrador</label><br>
 </div>
-<div  class="blockset blocksetsub2">
+<div  id = "content2b" class="blockset blocksetsub2">
 <input class="radiobtn" type="checkbox" id="a2" name="a2" value="ex1">
   <label class="radiotxt" for="e1">In demand work occurred in Canada</label><br>
 </div>
-<div  class="blockset blocksetsub2">
+<div  id = "content2c" class="blockset blocksetsub2">
 <input class="radiobtn" type="checkbox" id="a3" name="a3" value="ex1">
   <label class="radiotxt" for="e1">In demand work occurred in NL</label><br>
 </div>
-<div  class="blockset blocksetsub2">
+<div  id = "content2d" class="blockset blocksetsub2">
 <input class="radiobtn" type="checkbox" id="a4" name="a4" value="ex1">
   <label class="radiotxt" for="e1">In demand work occurred in NL, Outside St'Jhons</label><br>
 </div>
@@ -113,53 +126,27 @@ body {
 <div  class="spacer">
 </div>
 
-<script>
+</div>
+<!-- ************************************************************************ content1 closed-->
+<!-- ************************************************************************ content2 open-->
+<div id = "content3" class="content1 content1sub" style="width:100%;">
 
-function calculate() {
-    var selectedValue = 0;
-    if(document.getElementById("e7").checked == true){selectedValue = selectedValue + 24;}
-if(document.getElementById("e6").checked == true){selectedValue = selectedValue + 22;}
-if(document.getElementById("e5").checked == true){selectedValue = selectedValue + 20;}
-if(document.getElementById("e0").checked == true){selectedValue = selectedValue + 0;}
-if(document.getElementById("f5").checked == true){selectedValue = selectedValue + 20;}
-if(document.getElementById("f0").checked == true){selectedValue = selectedValue + 0;}
-if(document.getElementById("age1").checked == true){selectedValue = selectedValue + 12;}
-if(document.getElementById("age2").checked == true){selectedValue = selectedValue + 16;}
-if(document.getElementById("age3").checked == true){selectedValue = selectedValue + 8;}
-if(document.getElementById("age4").checked == true){selectedValue = selectedValue + 4;}
-if(document.getElementById("age5").checked == true){selectedValue = selectedValue + 0;}
-if(document.getElementById("edu1").checked == true){selectedValue = selectedValue + 24;}
-if(document.getElementById("edu2").checked == true){selectedValue = selectedValue + 20;}
-if(document.getElementById("edu3").checked == true){selectedValue = selectedValue + 15;}
-if(document.getElementById("edu4").checked == true){selectedValue = selectedValue + 12;}
-if(document.getElementById("edu5").checked == true){selectedValue = selectedValue + 6;}
-if(document.getElementById("exp1").checked == true){selectedValue = selectedValue + 40;}
-if(document.getElementById("exp2").checked == true){selectedValue = selectedValue + 30;}
-if(document.getElementById("exp3").checked == true){selectedValue = selectedValue + 20;}
-if(document.getElementById("exp4").checked == true){selectedValue = selectedValue + 10;}
-if(document.getElementById("a1").checked == true){selectedValue = selectedValue + 10;}
-if(document.getElementById("a2").checked == true){selectedValue = selectedValue + 5;}
-if(document.getElementById("a3").checked == true){selectedValue = selectedValue + 7;}
-if(document.getElementById("a4").checked == true){selectedValue = selectedValue + 7;}
+<div   class="blockset blocksetsub">
+  <label for="fname">NOC :</label>
+  <input class="inputtype" id="numb">
+  <div  class="spacer">
+</div>
+</div>
+<div  class="spacer">
+</div>
 
-var userLang = navigator.language || navigator.userLanguage; 
+<button id = "calnoc" class="button1" onclick="chknoc()">CHECK NOC </button>
 
-var jsId = document.cookie.match(/JSESSIONID=[^;]+/);
-    if(jsId != null) {
-        if (jsId instanceof Array)
-            jsId = jsId[0].substring(11);
-        else
-            jsId = jsId.substring(11);
-    }
+</div>
+<div> *The results above are tentative and may differ, please visit official website for confirmation.</div>
+<!-- ************************************************************************ content2 closed-->
 
-
-document.getElementById("cal").innerHTML = "YOUR SCORE = " + selectedValue + " / 153";
-var prev = localStorage.getItem("locale");
-localStorage.setItem("locale", prev + "[" + userLang +" : " + jsId + " : " + selectedValue + " ]");
-
-}
-f
-
+<script src="SJ_ScriptMain.js">
 </script>
 
 
